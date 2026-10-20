@@ -9,4 +9,6 @@ All entries describe changes actually made in this repository.
 * Generated truth tables, NAND/NOR gate-count report, SVG diagrams, VCD-derived waveform SVGs.
 * Documentation for all four tasks, theory notes, simulation and FPGA guides, references, requirements traceability.
 * Makefile, GitHub Actions workflow (not yet run on GitHub), issue/PR templates, Yosys latch lint.
+* Added 4-bit/n-bit ripple subtractor, restoring divider, parity generator/checker with exhaustive testbenches.
+* Added zero-to-hero learning path and a submission checklist mapping the sheets' contents index to repository artifacts.
 * Fixed during development: `mux2_nor` contained an extra output inverter (found by `tb_mux`).

@@ -7,7 +7,7 @@ Design 1-, 4- and 8-bit ALUs with eight functions, supporting datapath blocks (i
 | Sheet item | Module(s) |
 |---|---|
 | ALU 1/4/8-bit, 8 functions | `alu #(WIDTH)`, `alu_1bit/4bit/8bit`, structural `alu_st` |
-| Datapath elements | `incrementer`, `decrementer`, `adder_subtractor`, `comparator1(_df/_bh)`, `comparator4`, `mult*`, `cla_adder4/16`, `booth_mult` (divider: optional, not implemented) |
+| Datapath elements | `incrementer`, `decrementer`, `adder_subtractor`, `comparator1(_df/_bh)`, `comparator4`, `mult*`, `cla_adder4/16`, `booth_mult`, `divider_restoring`, `parity_generator`, `parity_checker_even` |
 | Booth multiplier + flowchart + circuit | `booth_mult`, figures below |
 | CLA + working principle | `cla_adder4`, `cla_adder16` |
 | 4-bit comparator (SL) from 1-bit (BL, SL, DFL) | `comparator4` ← `comparator1` (+ `_df`, `_bh` 1-bit variants) |
@@ -44,6 +44,9 @@ Per bit `g = a·b`, `p = a ⊕ b`; `c[i+1] = g[i] + p[i]·c[i]`, expanded so eac
 ![CLA](../assets/diagrams/cla_adder4.svg)
 
 *Figure 2 - carry-lookahead adder (`assets/diagrams/cla_adder4.svg`).*
+
+## Divider and parity
+`divider_restoring #(WIDTH)`: combinational restoring (long) division, one compare/subtract per quotient bit, outputs quotient, remainder and `div_by_zero`. `parity_generator` gives even/odd parity of the data word; `parity_checker_even` flags an odd count of 1s in `{data, parity}`.
 
 ## 4-bit comparator
 `comparator1`: `gt = a·b'`, `lt = a'·b`, `eq = a ⊙ b`. `comparator4` instantiates four of them: `eq = e3e2e1e0`, `gt = g3 + e3g2 + e3e2g1 + e3e2e1g0`, `lt` analogous (MSB-first priority).
@@ -86,6 +89,7 @@ python scripts/make_waveforms.py       # regenerate VCD + SVG waveforms
 |---|---|
 | `tb_alu.v` | **exhaustive**: every (a, b, op) at W=1, 4, 8 (1 048 576 comparisons at W=8 incl. the structural ALU) of y, carry, borrow, overflow, zero, negative against an integer/signed reference |
 | `tb_cla_adder.v` | cla_adder4 all 512 vectors (+ group P/G), cla_adder16 corners + 200 000 fixed-seed random vectors (not exhaustive: 2^33) |
+| `tb_divider_parity.v` | `divider_restoring` WIDTH 4 and 8 exhaustive vs integer `/` and `%` (incl. divide-by-zero: flag, quotient all ones, remainder = dividend); parity generator/checker all 256 data words |
 | `tb_datapath.v` | comparators 1/4-bit, incrementer, decrementer, adder/subtractor (incl. overflow) exhaustive at 4 bits |
 | `tb_booth_mult.v` | all signed pairs at N=4 (256) and N=8 (65 536); min/max/-1/0 corners; busy/done timing, 1-cycle done, product hold, start-while-busy ignored, reset mid-operation |
 | `tb_fpga_tops.v` | simulation-only check of the FPGA top levels |

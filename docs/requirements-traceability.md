@@ -21,7 +21,7 @@ Summarized from the four course task sheets (BECE102P Digital Systems Design Lab
 | III.II.c-d | Function with decoder; Verilog + waveforms | `<name>_dec`, decoder wave | Done |
 | III.II.f | Priority encoder / encoder, compare enc/dec, priority/simple, demux/mux | `rtl/encoder`, `rtl/demux`, Task III doc | Done |
 | IV.1 | ALU 1/4/8-bit with 8 functions | `rtl/alu` | Done |
-| IV.2 | Datapath elements (incrementer, decrementer, adder/subtractor, comparator, multiplier, decoder, encoder, ...) | `rtl/datapath`, `rtl/multipliers`, ... | Done; divider and parity generator not implemented (sheet lists them only as examples) |
+| IV.2 | Datapath elements (incrementer, decrementer, adder/subtractor, comparator, multiplier, decoder, encoder, ...) | `rtl/datapath`, `rtl/multipliers`, ... | Done incl. divider (`divider_restoring`) and parity generator/checker |
 | IV.3 | Half adder on DE10 with Quartus 20.1 Lite | `rtl/fpga`, [FPGA guide](fpga/quartus-de10-workflow.md) | Doc only - Quartus/board unavailable |
 | IV.4 | Assigned circuit on DE10 | `fpga_alu4_top` as an example | Doc only; **Open:** the student's assigned circuit is unknown |
 | IV.5 | 4-bit comparator (SL) from 1-bit (BL, SL, DFL) | `comparator1*`, `comparator4` | Done |

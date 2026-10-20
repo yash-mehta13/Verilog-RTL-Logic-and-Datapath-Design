@@ -12,6 +12,7 @@ Design and model, in Verilog (behavioral `_bh`, structural plain/`_nand`/`_nor`/
 | 4-bit adder using basic gates | `ripple_adder4_gates` (20 xor/and/or), `ripple_adder4_nand` (36), `ripple_adder4_nor` (36) |
 | Two-input NAND / NOR counts for HA, HS, FA, FS | `*_nand`, `*_nor` in `rtl/arithmetic/nand_nor_arith.v`; [gate-count report](gate-count-analysis/task01_nand_nor_gate_counts.md) |
 | n-bit parallel adder | `ripple_adder_n #(WIDTH)` |
+| 4-bit subtractor (sheet's circuit-diagram list) | `ripple_subtractor4`, `ripple_subtractor_n` (chained `full_subtractor`; `bout` = a < b + bin), `adder_subtractor` in `rtl/datapath` |
 
 Tools: Icarus Verilog 12 + vvp (default), ModelSim/Questa (see [simulation guide](simulation/simulation-workflows.md)), Python 3.
 
@@ -76,6 +77,7 @@ python scripts/run_tests.py --test tb_half_full_adders
 |---|---|
 | `tb/task01/tb_half_full_adders.v` | every input of HA/HS (bh, df, st, nand, nor) and FA/FS (+ mux, decoder) vs integer arithmetic |
 | `tb/task01/tb_ripple_adder.v` | all 512 `(a,b,cin)` for six 4-bit adders; all 131072 for `ripple_adder_n` WIDTH=8 |
+| `tb/task01/tb_ripple_subtractor.v` | all 512 `(a,b,bin)` for the 4-bit subtractor, all 131 072 for WIDTH=8 |
 | `tb/task01/tb_multipliers.v` | all operand pairs of 2x2, 3x3, 4x4 in 3 styles vs repeated addition; max/zero corners |
 | `tb/task01/tb_full_adder_wave.v`, `tb_ripple_adder4_wave.v` | small waveform scenarios |
 

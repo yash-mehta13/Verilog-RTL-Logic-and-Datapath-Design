@@ -11,6 +11,7 @@ Simulator: Icarus Verilog version 12.0 (stable) (); flags: `-g2001 -Wall -Wno-ti
 | 1 | `tb_multipliers` | PASS | tests=1012 |
 | 1 | `tb_ripple_adder` | PASS | tests=134145 |
 | 1 | `tb_ripple_adder4_wave` | PASS | tests=6 |
+| 1 | `tb_ripple_subtractor` | PASS | tests=131584 |
 | 3 | `tb_decoder` | PASS | tests=592 |
 | 3 | `tb_decoder_wave` | PASS | tests=19 |
 | 3 | `tb_encoder_demux` | PASS | tests=2228 |
@@ -22,9 +23,10 @@ Simulator: Icarus Verilog version 12.0 (stable) (); flags: `-g2001 -Wall -Wno-ti
 | 4 | `tb_booth_wave` | PASS | tests=2 |
 | 4 | `tb_cla_adder` | PASS | tests=202566 |
 | 4 | `tb_datapath` | PASS | tests=6656 |
+| 4 | `tb_divider_parity` | PASS | tests=66816 |
 | 4 | `tb_fpga_tops` | PASS | tests=640 |
 | examples | `tb_demo_dc` | PASS | tests=234 |
 | examples | `tb_demo_f3` | PASS | tests=144 |
 | examples | `tb_demo_f4` | PASS | tests=288 |
 
-20/20 testbenches passed. `tests=N` counts individual output comparisons performed by the testbench.
+22/22 testbenches passed. `tests=N` counts individual output comparisons performed by the testbench.

@@ -18,10 +18,10 @@ Verilog-2001 RTL, self-checking testbenches, a Boolean-function design toolchain
 | III | MUX, demux, decoders, encoders, function realization | [task03](docs/task03-mux-decoder-encoder.md) | `mux16`, `decoder4to16`, `priority_encoder8to3` |
 | IV | ALU (1/4/8-bit), CLA, comparator, Booth, FPGA flow | [task04](docs/task04-alu-fpga.md) | `alu`, `cla_adder4`, `booth_mult`, `comparator4` |
 
-Also: [theory/viva notes](docs/theory/README.md), [requirements traceability](docs/requirements-traceability.md), [references](docs/references.md), [simulation guide](docs/simulation/simulation-workflows.md), [FPGA guide](docs/fpga/quartus-de10-workflow.md).
+New to Verilog? Follow the [zero-to-hero learning path](docs/learning-path/README.md). Preparing your report? Use the [submission checklist](docs/submission-checklist.md). Also: [theory/viva notes](docs/theory/README.md), [requirements traceability](docs/requirements-traceability.md), [references](docs/references.md), [simulation guide](docs/simulation/simulation-workflows.md), [FPGA guide](docs/fpga/quartus-de10-workflow.md).
 
 ## Features
-* 108 synthesizable Verilog-2001 modules (behavioral `_bh`, dataflow `_df`, structural), no SystemVerilog.
+* 113 synthesizable Verilog-2001 modules (behavioral `_bh`, dataflow `_df`, structural), no SystemVerilog.
 * Exhaustive checks for the small blocks, including all 524 288 `(a, b, op)` ALU vectors at 8 bits and all 65 536 signed operand pairs for the 8-bit Booth multiplier.
 * Config-driven Boolean toolchain (Quine–McCluskey, K-map SVG, 2-input-gate networks with gate counts, generated RTL + testbench).
 * Diagrams drawn from the RTL by script; waveforms rendered from real VCD files.
@@ -30,12 +30,12 @@ Also: [theory/viva notes](docs/theory/README.md), [requirements traceability](do
 ## Module inventory
 | Folder | Modules |
 |---|---|
-| `rtl/arithmetic` | half/full adder & subtractor (3 styles), `*_nand`/`*_nor`, MUX- and decoder-based FA/FS, `ripple_adder4` (+`_gates`,`_df`,`_bh`,`_nand`,`_nor`), `ripple_adder_n`, `cla_adder4`, `cla_adder16` |
+| `rtl/arithmetic` | half/full adder & subtractor (3 styles), `*_nand`/`*_nor`, MUX- and decoder-based FA/FS, `ripple_adder4` (+`_gates`,`_df`,`_bh`,`_nand`,`_nor`), `ripple_adder_n`, `ripple_subtractor4/_n`, `cla_adder4`, `cla_adder16` |
 | `rtl/multipliers` | `mult2x2/3x3/4x4` (+`_df`,`_bh`), `mult_array_n`, `booth_mult` |
 | `rtl/mux` | `mux2` (+`_bh`,`_sop`,`_pos`,`_nand`,`_nor`), `mux4/8/16` (+`_df`,`_bh`) |
 | `rtl/decoder` | `decoder1to2…4to16` (+`_df`,`_bh`,`_n`), `decoder2to4_sop/_pos/_nand/_nor` |
 | `rtl/encoder`, `rtl/demux` | simple and priority encoders 4:2 / 8:3; `demux1to2`, `demux1to4` |
-| `rtl/datapath` | incrementer, decrementer, adder/subtractor, `comparator1`, `comparator4` |
+| `rtl/datapath` | incrementer, decrementer, adder/subtractor, `comparator1`, `comparator4`, `divider_restoring`, `parity_generator`, `parity_checker_even` |
 | `rtl/alu` | `alu`, `alu_1bit/4bit/8bit`, structural `alu_st`, `alu_opcodes.vh` |
 | `rtl/fpga` | board-agnostic tops: `fpga_half_adder_top`, `fpga_alu4_top` |
 
@@ -60,7 +60,7 @@ python tools/verification/gate_count.py --write
 ```
 
 ## Test coverage (from the recorded run)
-20/20 testbenches pass with Icarus Verilog 12.0 (`-g2001 -Wall`): see [test_results.md](docs/simulation/test_results.md) for per-testbench comparison counts. Highlights: adders/subtractors/multipliers exhaustive; MUX/decoder/encoder all selects/addresses/patterns; ALU exhaustive at 1/4/8 bits; Booth exhaustive at N=4 and N=8 plus protocol tests; CLA-16 uses corners + 200 000 random vectors (not exhaustive). Yosys found no inferred latches in any of the 108 modules (`scripts/synth_check.py`). Deliberate bug injection (see Task IV doc) confirmed the testbenches fail when the RTL is wrong. These results come from simulation only; CI workflow status on GitHub has not been observed.
+22/22 testbenches pass with Icarus Verilog 12.0 (`-g2001 -Wall`): see [test_results.md](docs/simulation/test_results.md) for per-testbench comparison counts. Highlights: adders/subtractors/multipliers exhaustive; MUX/decoder/encoder all selects/addresses/patterns; ALU exhaustive at 1/4/8 bits; Booth exhaustive at N=4 and N=8 plus protocol tests; CLA-16 uses corners + 200 000 random vectors (not exhaustive). Yosys found no inferred latches in any of the 113 modules (`scripts/synth_check.py`). Deliberate bug injection (see Task IV doc) confirmed the testbenches fail when the RTL is wrong. These results come from simulation only; CI workflow status on GitHub has not been observed.
 
 ## Waveforms
 Each `assets/waveforms/*.svg` is rendered from the neighbouring `*.vcd` produced by a self-checking `*_wave` testbench; open the VCD in GTKWave for interactive viewing.
@@ -91,7 +91,7 @@ fpga/           pin-assignment and Quartus Tcl templates (placeholders only)
 
 ## Known limitations
 * Not run on ModelSim/Questa, Quartus or hardware.
-* Divider and parity generator (listed only as examples on the sheet) are not implemented.
+* The divider is combinational (instructional); no clocked divider is provided.
 * CLA-16 is checked by directed + random vectors, not exhaustively.
 * Gate counts describe the specific circuits built, with no global-minimality proof.
 * Transistor-level CMOS / transmission-gate drawing is conceptual.
