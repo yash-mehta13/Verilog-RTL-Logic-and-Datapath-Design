@@ -1,0 +1,14 @@
+# Output of tb/task04/tb_booth_wave.v (Icarus Verilog), N=4.
+# A is 5 bits (N+1), Q is 4 bits; state shown BEFORE each add/sub + shift step.
+count=4 A=00000 Q=0101 Q-1=0 action=A=A-M
+multiplicand M=1101 (-3)  multiplier Q=0101 (5)
+count=3 A=00001 Q=1010 Q-1=1 action=A=A+M
+count=2 A=11111 Q=0101 Q-1=0 action=A=A-M
+count=1 A=00001 Q=0010 Q-1=1 action=A=A+M
+product=11110001 (-15) expected=-15
+count=4 A=00000 Q=1000 Q-1=0 action=none 
+multiplicand M=0111 (7)  multiplier Q=1000 (-8)
+count=3 A=00000 Q=0100 Q-1=0 action=none 
+count=2 A=00000 Q=0010 Q-1=0 action=none 
+count=1 A=00000 Q=0001 Q-1=0 action=A=A-M
+product=11001000 (-56) expected=-56

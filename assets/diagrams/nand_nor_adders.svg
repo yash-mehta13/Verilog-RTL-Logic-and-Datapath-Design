@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 710" width="1100" height="710" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>Full adder from two-input NAND only and NOR only</title>
+<desc>Drawn from modules full_adder_nand and full_adder_nor in rtl/arithmetic/nand_nor_arith.v; labels n1.. are the net names in the RTL.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect width="1100" height="710" fill="#ffffff"/>
+<text x="20.0" y="30.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a">Full adder from two-input NAND only and NOR only</text>
+<text x="20.0" y="54.0" font-size="14" text-anchor="start" font-weight="bold" fill="#1b2a3a">full_adder_nand  -  9 two-input NAND gates (tied inputs = inverter)</text>
+<text x="42.0" y="94.0" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">a</text>
+<circle cx="50.0" cy="90.0" r="3" fill="#1b2a3a"/>
+<text x="42.0" y="151.6" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">b</text>
+<circle cx="50.0" cy="147.6" r="3" fill="#1b2a3a"/>
+<text x="42.0" y="209.2" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">cin</text>
+<circle cx="50.0" cy="205.2" r="3" fill="#1b2a3a"/>
+<path d="M120,98.8 H145 A20,20 0 0 1 145,138.8 H120 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="169" cy="118.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M238,84.4 H263 A20,20 0 0 1 263,124.4 H238 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="287" cy="104.4" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M238,148.4 H263 A20,20 0 0 1 263,188.4 H238 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="287" cy="168.4" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M356,116.4 H381 A20,20 0 0 1 381,156.4 H356 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="405" cy="136.4" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M474,150.8 H499 A20,20 0 0 1 499,190.8 H474 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="523" cy="170.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M592,124.80000000000001 H617 A20,20 0 0 1 617,164.8 H592 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="641" cy="144.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M592,188.8 H617 A20,20 0 0 1 617,228.8 H592 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="641" cy="208.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M592,252.8 H617 A20,20 0 0 1 617,292.8 H592 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="641" cy="272.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M710,220.8 H735 A20,20 0 0 1 735,260.8 H710 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="759" cy="240.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M50.0,90.0 C85.0,90.0 85.0,109.8 120.0,109.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,147.6 C85.0,147.6 85.0,127.8 120.0,127.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,90.0 C144.0,90.0 144.0,95.4 238.0,95.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M173.0,118.8 C205.5,118.8 205.5,113.4 238.0,113.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,147.6 C144.0,147.6 144.0,159.4 238.0,159.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M173.0,118.8 C205.5,118.8 205.5,177.4 238.0,177.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M291.0,104.4 C323.5,104.4 323.5,127.4 356.0,127.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M291.0,168.4 C323.5,168.4 323.5,145.4 356.0,145.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M409.0,136.4 C441.5,136.4 441.5,161.8 474.0,161.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,205.2 C262.0,205.2 262.0,179.8 474.0,179.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M173.0,118.8 C382.5,118.8 382.5,135.8 592.0,135.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M527.0,170.8 C559.5,170.8 559.5,153.8 592.0,153.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M409.0,136.4 C500.5,136.4 500.5,199.8 592.0,199.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M527.0,170.8 C559.5,170.8 559.5,217.8 592.0,217.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,205.2 C321.0,205.2 321.0,263.8 592.0,263.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M527.0,170.8 C559.5,170.8 559.5,281.8 592.0,281.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M645.0,208.8 C677.5,208.8 677.5,231.8 710.0,231.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M645.0,272.8 C677.5,272.8 677.5,249.8 710.0,249.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<text x="142.0" y="94.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">n1</text>
+<text x="260.0" y="80.4" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">n2</text>
+<text x="260.0" y="144.4" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">n3</text>
+<text x="378.0" y="112.4" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">x</text>
+<text x="496.0" y="146.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">n5</text>
+<text x="614.0" y="120.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">cout</text>
+<text x="614.0" y="184.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">n6</text>
+<text x="614.0" y="248.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">n7</text>
+<text x="732.0" y="216.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">sum</text>
+<line x1="763.0" y1="240.8" x2="789.0" y2="240.8" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="793.0" y="244.8" font-size="13" text-anchor="start" font-weight="bold" fill="#d55e00">sum</text>
+<line x1="645.0" y1="144.8" x2="671.0" y2="144.8" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="675.0" y="148.8" font-size="13" text-anchor="start" font-weight="bold" fill="#d55e00">cout</text>
+<text x="20.0" y="384.0" font-size="14" text-anchor="start" font-weight="bold" fill="#1b2a3a">full_adder_nor  -  9 two-input NOR gates (tied inputs = inverter)</text>
+<text x="42.0" y="424.0" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">a</text>
+<circle cx="50.0" cy="420.0" r="3" fill="#1b2a3a"/>
+<text x="42.0" y="481.6" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">b</text>
+<circle cx="50.0" cy="477.6" r="3" fill="#1b2a3a"/>
+<text x="42.0" y="539.2" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">cin</text>
+<circle cx="50.0" cy="535.2" r="3" fill="#1b2a3a"/>
+<path d="M120,428.8 Q134,448.8 120,468.8 Q154,468.8 168,448.8 Q154,428.8 120,428.8 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="172" cy="448.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M238,414.4 Q252,434.4 238,454.4 Q272,454.4 286,434.4 Q272,414.4 238,414.4 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="290" cy="434.4" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M238,478.4 Q252,498.4 238,518.4 Q272,518.4 286,498.4 Q272,478.4 238,478.4 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="290" cy="498.4" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M356,446.4 Q370,466.4 356,486.4 Q390,486.4 404,466.4 Q390,446.4 356,446.4 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="408" cy="466.4" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M474,480.8 Q488,500.8 474,520.8 Q508,520.8 522,500.8 Q508,480.8 474,480.8 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="526" cy="500.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M592,454.8 Q606,474.8 592,494.8 Q626,494.8 640,474.8 Q626,454.8 592,454.8 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="644" cy="474.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M592,518.8 Q606,538.8 592,558.8 Q626,558.8 640,538.8 Q626,518.8 592,518.8 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="644" cy="538.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M592,582.8 Q606,602.8 592,622.8 Q626,622.8 640,602.8 Q626,582.8 592,582.8 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="644" cy="602.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M710,550.8 Q724,570.8 710,590.8 Q744,590.8 758,570.8 Q744,550.8 710,550.8 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="762" cy="570.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M50.0,420.0 C87.5,420.0 87.5,439.8 125.0,439.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,477.6 C87.5,477.6 87.5,457.8 125.0,457.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,420.0 C146.5,420.0 146.5,425.4 243.0,425.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M176.0,448.8 C209.5,448.8 209.5,443.4 243.0,443.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,477.6 C146.5,477.6 146.5,489.4 243.0,489.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M176.0,448.8 C209.5,448.8 209.5,507.4 243.0,507.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M294.0,434.4 C327.5,434.4 327.5,457.4 361.0,457.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M294.0,498.4 C327.5,498.4 327.5,475.4 361.0,475.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M412.0,466.4 C445.5,466.4 445.5,491.8 479.0,491.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,535.2 C264.5,535.2 264.5,509.8 479.0,509.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M176.0,448.8 C386.5,448.8 386.5,465.8 597.0,465.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M530.0,500.8 C563.5,500.8 563.5,483.8 597.0,483.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M412.0,466.4 C504.5,466.4 504.5,529.8 597.0,529.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M530.0,500.8 C563.5,500.8 563.5,547.8 597.0,547.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,535.2 C323.5,535.2 323.5,593.8 597.0,593.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M530.0,500.8 C563.5,500.8 563.5,611.8 597.0,611.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M648.0,538.8 C681.5,538.8 681.5,561.8 715.0,561.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M648.0,602.8 C681.5,602.8 681.5,579.8 715.0,579.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<text x="142.0" y="424.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">n1</text>
+<text x="260.0" y="410.4" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">n2</text>
+<text x="260.0" y="474.4" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">n3</text>
+<text x="378.0" y="442.4" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">xn</text>
+<text x="496.0" y="476.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">m1</text>
+<text x="614.0" y="450.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">cout</text>
+<text x="614.0" y="514.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">m2</text>
+<text x="614.0" y="578.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">m3</text>
+<text x="732.0" y="546.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">sum</text>
+<line x1="766.0" y1="570.8" x2="792.0" y2="570.8" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="796.0" y="574.8" font-size="13" text-anchor="start" font-weight="bold" fill="#d55e00">sum</text>
+<line x1="648.0" y1="474.8" x2="674.0" y2="474.8" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="678.0" y="478.8" font-size="13" text-anchor="start" font-weight="bold" fill="#d55e00">cout</text>
+</svg>

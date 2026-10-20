@@ -1,0 +1,10 @@
+{
+  "name": "demo_f4",
+  "description": "Illustrative 4-variable function F(A,B,C,D) = sum m(0,1,2,5,6,7,8,9,10,14). A DEMONSTRATION only - not an assigned registration-number function.",
+  "is_demonstration": true,
+  "variables": ["A", "B", "C", "D"],
+  "minterms": [0, 1, 2, 5, 6, 7, 8, 9, 10, 14],
+  "dont_cares": [],
+  "outputs": { "f": "F", "fn": "F_n" },
+  "mapping_rule": null
+}

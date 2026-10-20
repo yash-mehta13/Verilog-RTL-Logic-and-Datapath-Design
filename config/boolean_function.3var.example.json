@@ -1,0 +1,10 @@
+{
+  "name": "demo_f3",
+  "description": "Illustrative 3-variable function F(X,Y,Z) = sum m(1,2,4,7) (3-input parity). A DEMONSTRATION only - not an assigned registration-number function.",
+  "is_demonstration": true,
+  "variables": ["X", "Y", "Z"],
+  "minterms": [1, 2, 4, 7],
+  "dont_cares": [],
+  "outputs": { "f": "F", "fn": "F_n" },
+  "mapping_rule": null
+}

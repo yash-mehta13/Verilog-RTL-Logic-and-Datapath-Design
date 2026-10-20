@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 318" width="1100" height="318" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>4-bit ripple-carry adder</title>
+<desc>Waveform rendered from the Icarus Verilog VCD file tb_ripple_adder4_wave.vcd (VCD timescale 1ps). Simulation output, not hardware measurement.</desc>
+<rect width="1100" height="318" fill="#ffffff"/>
+<text x="16" y="26" font-size="17" font-weight="bold" fill="#111">4-bit ripple-carry adder</text>
+<text x="16" y="46" font-size="12" fill="#444">Stimulus: 6 directed vectors, 20 ns each (incl. 13+7=20 and 15+0+1). Source: tb_ripple_adder4_wave.vcd (Icarus Verilog simulation, time in ns).</text>
+<line x1="170.0" y1="72" x2="170.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="170.0" y="66" font-size="11" text-anchor="middle" fill="#555">0</text>
+<line x1="245.0" y1="72" x2="245.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="245.0" y="66" font-size="11" text-anchor="middle" fill="#555">10</text>
+<line x1="320.0" y1="72" x2="320.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="320.0" y="66" font-size="11" text-anchor="middle" fill="#555">20</text>
+<line x1="395.0" y1="72" x2="395.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="395.0" y="66" font-size="11" text-anchor="middle" fill="#555">30</text>
+<line x1="470.0" y1="72" x2="470.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="470.0" y="66" font-size="11" text-anchor="middle" fill="#555">40</text>
+<line x1="545.0" y1="72" x2="545.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="545.0" y="66" font-size="11" text-anchor="middle" fill="#555">50</text>
+<line x1="620.0" y1="72" x2="620.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="620.0" y="66" font-size="11" text-anchor="middle" fill="#555">60</text>
+<line x1="695.0" y1="72" x2="695.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="695.0" y="66" font-size="11" text-anchor="middle" fill="#555">70</text>
+<line x1="770.0" y1="72" x2="770.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="770.0" y="66" font-size="11" text-anchor="middle" fill="#555">80</text>
+<line x1="845.0" y1="72" x2="845.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="845.0" y="66" font-size="11" text-anchor="middle" fill="#555">90</text>
+<line x1="920.0" y1="72" x2="920.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="920.0" y="66" font-size="11" text-anchor="middle" fill="#555">100</text>
+<line x1="995.0" y1="72" x2="995.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="995.0" y="66" font-size="11" text-anchor="middle" fill="#555">110</text>
+<line x1="1070.0" y1="72" x2="1070.0" y2="268" stroke="#d9d9d9" stroke-width="1"/>
+<text x="1070.0" y="66" font-size="11" text-anchor="middle" fill="#555">120</text>
+<text x="1094" y="66" font-size="11" text-anchor="end" fill="#555">ns</text>
+<text x="160" y="101.0" font-size="13" text-anchor="end" fill="#111">a[3:0]</text>
+<polygon points="173.0,97.0 177.0,85 313.0,85 317.0,97.0 313.0,109 177.0,109" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="245.0" y="101.0" font-size="11" text-anchor="middle" fill="#111">0</text>
+<polygon points="323.0,97.0 327.0,85 463.0,85 467.0,97.0 463.0,109 327.0,109" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="395.0" y="101.0" font-size="11" text-anchor="middle" fill="#111">3</text>
+<polygon points="473.0,97.0 477.0,85 613.0,85 617.0,97.0 613.0,109 477.0,109" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="545.0" y="101.0" font-size="11" text-anchor="middle" fill="#111">7</text>
+<polygon points="623.0,97.0 627.0,85 763.0,85 767.0,97.0 763.0,109 627.0,109" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="695.0" y="101.0" font-size="11" text-anchor="middle" fill="#111">13</text>
+<polygon points="773.0,97.0 777.0,85 1063.0,85 1067.0,97.0 1063.0,109 777.0,109" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="920.0" y="101.0" font-size="11" text-anchor="middle" fill="#111">15</text>
+<line x1="170" y1="116" x2="1070" y2="116" stroke="#eee"/>
+<text x="160" y="139.0" font-size="13" text-anchor="end" fill="#111">b[3:0]</text>
+<polygon points="173.0,135.0 177.0,123 313.0,123 317.0,135.0 313.0,147 177.0,147" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="245.0" y="139.0" font-size="11" text-anchor="middle" fill="#111">0</text>
+<polygon points="323.0,135.0 327.0,123 463.0,123 467.0,135.0 463.0,147 327.0,147" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="395.0" y="139.0" font-size="11" text-anchor="middle" fill="#111">4</text>
+<polygon points="473.0,135.0 477.0,123 613.0,123 617.0,135.0 613.0,147 477.0,147" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="545.0" y="139.0" font-size="11" text-anchor="middle" fill="#111">9</text>
+<polygon points="623.0,135.0 627.0,123 763.0,123 767.0,135.0 763.0,147 627.0,147" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="695.0" y="139.0" font-size="11" text-anchor="middle" fill="#111">7</text>
+<polygon points="773.0,135.0 777.0,123 913.0,123 917.0,135.0 913.0,147 777.0,147" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="845.0" y="139.0" font-size="11" text-anchor="middle" fill="#111">0</text>
+<polygon points="923.0,135.0 927.0,123 1063.0,123 1067.0,135.0 1063.0,147 927.0,147" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="995.0" y="139.0" font-size="11" text-anchor="middle" fill="#111">15</text>
+<line x1="170" y1="154" x2="1070" y2="154" stroke="#eee"/>
+<text x="160" y="177.0" font-size="13" text-anchor="end" fill="#111">cin</text>
+<line x1="170.0" y1="185" x2="770.0" y2="185" stroke="#1f4e79" stroke-width="2"/><line x1="770.0" y1="185" x2="770.0" y2="161" stroke="#1f4e79" stroke-width="2"/><line x1="770.0" y1="161" x2="1070.0" y2="161" stroke="#1f4e79" stroke-width="2"/>
+<line x1="170" y1="192" x2="1070" y2="192" stroke="#eee"/>
+<text x="160" y="215.0" font-size="13" text-anchor="end" fill="#111">sum[3:0]</text>
+<polygon points="173.0,211.0 177.0,199 313.0,199 317.0,211.0 313.0,223 177.0,223" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="245.0" y="215.0" font-size="11" text-anchor="middle" fill="#111">0</text>
+<polygon points="323.0,211.0 327.0,199 463.0,199 467.0,211.0 463.0,223 327.0,223" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="395.0" y="215.0" font-size="11" text-anchor="middle" fill="#111">7</text>
+<polygon points="473.0,211.0 477.0,199 613.0,199 617.0,211.0 613.0,223 477.0,223" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="545.0" y="215.0" font-size="11" text-anchor="middle" fill="#111">0</text>
+<polygon points="623.0,211.0 627.0,199 763.0,199 767.0,211.0 763.0,223 627.0,223" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="695.0" y="215.0" font-size="11" text-anchor="middle" fill="#111">4</text>
+<polygon points="773.0,211.0 777.0,199 913.0,199 917.0,211.0 913.0,223 777.0,223" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="845.0" y="215.0" font-size="11" text-anchor="middle" fill="#111">0</text>
+<polygon points="923.0,211.0 927.0,199 1063.0,199 1067.0,211.0 1063.0,223 927.0,223" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="995.0" y="215.0" font-size="11" text-anchor="middle" fill="#111">15</text>
+<line x1="170" y1="230" x2="1070" y2="230" stroke="#eee"/>
+<text x="160" y="253.0" font-size="13" text-anchor="end" fill="#111">cout</text>
+<line x1="170.0" y1="261" x2="470.0" y2="261" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="261" x2="470.0" y2="237" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="237" x2="770.0" y2="237" stroke="#1f4e79" stroke-width="2"/><line x1="770.0" y1="237" x2="1070.0" y2="237" stroke="#1f4e79" stroke-width="2"/>
+<line x1="170" y1="268" x2="1070" y2="268" stroke="#eee"/>
+</svg>

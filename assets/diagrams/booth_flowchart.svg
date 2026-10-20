@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 860" width="760" height="860" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>Booth multiplication flowchart</title>
+<desc>Radix-2 Booth algorithm as implemented in booth_mult.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect width="760" height="860" fill="#ffffff"/>
+<text x="20.0" y="30.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a">Booth multiplier - algorithm (module booth_mult)</text>
+<rect x="210.0" y="50.0" width="180.0" height="44.0" rx="8" fill="#f2f2f2" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="300.0" y="68.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">START</text>
+<text x="300.0" y="84.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">start=1 while idle</text>
+<line x1="300.0" y1="94.0" x2="300.0" y2="120.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="130.0" y="120.0" width="340.0" height="76.0" rx="8" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="300.0" y="146.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Initialise</text>
+<text x="300.0" y="162.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">A = 0 (N+1 bits), Q = multiplier, Q-1 = 0</text>
+<text x="300.0" y="178.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">M = sign-extended multiplicand, count = N</text>
+<line x1="300.0" y1="196.0" x2="300.0" y2="230.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polygon points="300,230.0 410.0,280 300,330.0 190.0,280" fill="#fffbe0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="300.0" y="284.0" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Q[0], Q-1 ?</text>
+<rect x="560.0" y="200.0" width="160.0" height="50.0" rx="8" fill="#e7f5ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="640.0" y="229.6" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">A = A + M</text>
+<rect x="560.0" y="310.0" width="160.0" height="50.0" rx="8" fill="#fff1e0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="640.0" y="339.6" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">A = A - M</text>
+<polyline points="410.0,280.0 500.0,280.0 500.0,225.0 560.0,225.0" fill="none" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="470.0" y="215.0" font-size="13" text-anchor="start" font-weight="bold" fill="#1b2a3a">01</text>
+<polyline points="500.0,280.0 500.0,335.0 560.0,335.0" fill="none" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="470.0" y="330.0" font-size="13" text-anchor="start" font-weight="bold" fill="#1b2a3a">10</text>
+<line x1="300.0" y1="330.0" x2="300.0" y2="410.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="308.0" y="380.0" font-size="12" text-anchor="start" font-weight="normal" fill="#1b2a3a">00 or 11 (no add)</text>
+<polyline points="640.0,250.0 640.0,270.0 740.0,270.0 740.0,395.0 320.0,395.0 320.0,410.0" fill="none" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="640.0,360.0 640.0,380.0 740.0,380.0" fill="none" stroke="#1b2a3a" stroke-width="1.6"/>
+<rect x="130.0" y="410.0" width="340.0" height="70.0" rx="8" fill="#f3ebf7" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="300.0" y="441.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Arithmetic shift right</text>
+<text x="300.0" y="457.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">{A, Q, Q-1} &gt;&gt;&gt; 1  (A's sign bit copied)</text>
+<line x1="300.0" y1="480.0" x2="300.0" y2="510.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="210.0" y="510.0" width="180.0" height="44.0" rx="8" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="300.0" y="536.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">count = count - 1</text>
+<line x1="300.0" y1="554.0" x2="300.0" y2="590.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polygon points="300,590.0 400.0,640 300,690.0 200.0,640" fill="#fffbe0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="300.0" y="644.0" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">count = 0 ?</text>
+<polyline points="200.0,640.0 60.0,640.0 60.0,280.0 190.0,280.0" fill="none" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="70.0" y="630.0" font-size="13" text-anchor="start" font-weight="bold" fill="#1b2a3a">no</text>
+<line x1="300.0" y1="690.0" x2="300.0" y2="730.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="308.0" y="715.0" font-size="13" text-anchor="start" font-weight="bold" fill="#1b2a3a">yes</text>
+<rect x="130.0" y="730.0" width="340.0" height="76.0" rx="8" fill="#f2f2f2" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="300.0" y="756.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">DONE (1-cycle pulse)</text>
+<text x="300.0" y="772.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">product = {A[N-1:0], Q}  (2N-bit signed)</text>
+<text x="300.0" y="788.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">busy = 0, product held until next result</text>
+<text x="20.0" y="845.0" font-size="12" text-anchor="start" font-weight="normal" fill="#555">One loop iteration = one clock cycle in the RTL (add/sub and shift happen in the same cycle).</text>
+</svg>

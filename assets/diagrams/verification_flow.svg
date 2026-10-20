@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" width="1100" height="300" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>Verification flow</title>
+<desc>RTL plus testbench compiled by iverilog, run by vvp, checked against an independent reference model.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect width="1100" height="300" fill="#ffffff"/>
+<text x="20.0" y="30.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a">Verification flow (python scripts/run_tests.py)</text>
+<rect x="20.0" y="80.0" width="150.0" height="70.0" rx="8" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="95.0" y="111.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">RTL</text>
+<text x="95.0" y="127.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">rtl/**/*.v</text>
+<rect x="200.0" y="80.0" width="150.0" height="70.0" rx="8" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="275.0" y="111.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Testbench</text>
+<text x="275.0" y="127.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">tb/task0X/tb_*.v</text>
+<line x1="170.0" y1="115.0" x2="200.0" y2="115.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="380.0" y="80.0" width="150.0" height="70.0" rx="8" fill="#fffbe0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="455.0" y="111.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">iverilog</text>
+<text x="455.0" y="127.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">-g2001 -Wall</text>
+<line x1="350.0" y1="115.0" x2="380.0" y2="115.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="560.0" y="80.0" width="150.0" height="70.0" rx="8" fill="#fffbe0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="635.0" y="111.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">vvp</text>
+<text x="635.0" y="127.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">simulation</text>
+<line x1="530.0" y1="115.0" x2="560.0" y2="115.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="740.0" y="80.0" width="150.0" height="70.0" rx="8" fill="#e7f5ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="815.0" y="111.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Self-check</text>
+<text x="815.0" y="127.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">DUT vs reference</text>
+<line x1="710.0" y1="115.0" x2="740.0" y2="115.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="920.0" y="80.0" width="150.0" height="70.0" rx="8" fill="#fff1e0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="995.0" y="111.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">RESULT</text>
+<text x="995.0" y="127.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">PASS / FAIL</text>
+<line x1="890.0" y1="115.0" x2="920.0" y2="115.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="560.0" y="200.0" width="260.0" height="60.0" rx="8" fill="#f3ebf7" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="690.0" y="226.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">VCD (+vcd=file, *_wave tests)</text>
+<text x="690.0" y="242.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">-&gt; vcd_to_svg.py -&gt; SVG / GTKWave</text>
+<line x1="650.0" y1="150.0" x2="650.0" y2="200.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="20.0" y="200.0" width="480.0" height="60.0" rx="8" fill="#ffffff" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="260.0" y="226.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Reference model is independent of the DUT:</text>
+<text x="260.0" y="242.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">integer arithmetic, explicit tables, or config minterms</text>
+<text x="20.0" y="290.0" font-size="12" text-anchor="start" font-weight="normal" fill="#555">A test only passes if the simulator ran and printed 'RESULT: PASS'; a missing simulator is reported as BLOCKED.</text>
+</svg>

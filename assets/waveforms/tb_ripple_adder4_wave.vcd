@@ -1,0 +1,321 @@
+$date
+	Tue Oct 20 08:30:06 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_ripple_adder4_wave $end
+$var wire 4 ! sum [3:0] $end
+$var wire 1 " cout $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 1 % cin $end
+$var reg 2048 & vcdfile [2047:0] $end
+$var integer 32 ' errors [31:0] $end
+$scope module dut $end
+$var wire 4 ( a [3:0] $end
+$var wire 4 ) b [3:0] $end
+$var wire 1 % cin $end
+$var wire 4 * sum [3:0] $end
+$var wire 1 " cout $end
+$var wire 5 + c [4:0] $end
+$scope begin stage[0] $end
+$var parameter 2 , i $end
+$scope module fa $end
+$var wire 1 - a $end
+$var wire 1 . b $end
+$var wire 1 / cin $end
+$var wire 1 0 cout $end
+$var wire 1 1 sum $end
+$var wire 1 2 s1 $end
+$var wire 1 3 c2 $end
+$var wire 1 4 c1 $end
+$scope module ha0 $end
+$var wire 1 - a $end
+$var wire 1 . b $end
+$var wire 1 4 carry $end
+$var wire 1 2 sum $end
+$upscope $end
+$scope module ha1 $end
+$var wire 1 2 a $end
+$var wire 1 / b $end
+$var wire 1 3 carry $end
+$var wire 1 1 sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin stage[1] $end
+$var parameter 2 5 i $end
+$scope module fa $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 8 cin $end
+$var wire 1 9 cout $end
+$var wire 1 : sum $end
+$var wire 1 ; s1 $end
+$var wire 1 < c2 $end
+$var wire 1 = c1 $end
+$scope module ha0 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 = carry $end
+$var wire 1 ; sum $end
+$upscope $end
+$scope module ha1 $end
+$var wire 1 ; a $end
+$var wire 1 8 b $end
+$var wire 1 < carry $end
+$var wire 1 : sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin stage[2] $end
+$var parameter 3 > i $end
+$scope module fa $end
+$var wire 1 ? a $end
+$var wire 1 @ b $end
+$var wire 1 A cin $end
+$var wire 1 B cout $end
+$var wire 1 C sum $end
+$var wire 1 D s1 $end
+$var wire 1 E c2 $end
+$var wire 1 F c1 $end
+$scope module ha0 $end
+$var wire 1 ? a $end
+$var wire 1 @ b $end
+$var wire 1 F carry $end
+$var wire 1 D sum $end
+$upscope $end
+$scope module ha1 $end
+$var wire 1 D a $end
+$var wire 1 A b $end
+$var wire 1 E carry $end
+$var wire 1 C sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin stage[3] $end
+$var parameter 3 G i $end
+$scope module fa $end
+$var wire 1 H a $end
+$var wire 1 I b $end
+$var wire 1 J cin $end
+$var wire 1 K cout $end
+$var wire 1 L sum $end
+$var wire 1 M s1 $end
+$var wire 1 N c2 $end
+$var wire 1 O c1 $end
+$scope module ha0 $end
+$var wire 1 H a $end
+$var wire 1 I b $end
+$var wire 1 O carry $end
+$var wire 1 M sum $end
+$upscope $end
+$scope module ha1 $end
+$var wire 1 M a $end
+$var wire 1 J b $end
+$var wire 1 N carry $end
+$var wire 1 L sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope task apply $end
+$var reg 4 P ta [3:0] $end
+$var reg 4 Q tb_ [3:0] $end
+$var reg 1 R tc $end
+$var integer 32 S e [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 G
+b10 >
+b1 5
+b0 ,
+$end
+#0
+$dumpvars
+bx S
+0R
+b0 Q
+b0 P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+04
+03
+02
+01
+00
+0/
+0.
+0-
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+b10111101101000011011110110110101100101001011110111010101110011011001010111001000101111010101100110010101110010011010010110110001101111011001110010110101010010010101000100110000101101010011000110111101100111011010010110001100101101011000010110111001100100001011010100010001100001011101000110000101110000011000010111010001101000001011010100010001100101011100110110100101100111011011100010111101110011011010010110110100101111011001110110010101101110011001010111001001100001011101000110010101100100001011110111011001100011011001000010111101110100011000100101111101110010011010010111000001110000011011000110010101011111011000010110010001100100011001010111001000110100010111110111011101100001011101100110010100101110011101100110001101100100 &
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#20000
+1C
+11
+b111 !
+b111 *
+1:
+1D
+12
+1;
+1@
+1-
+16
+b100 $
+b100 )
+b11 #
+b11 (
+b100 Q
+b11 P
+b0 S
+#40000
+1"
+1K
+1N
+1J
+1B
+0C
+1E
+1A
+19
+0:
+1<
+18
+01
+b11110 +
+10
+b0 !
+b0 *
+0L
+02
+14
+1M
+1.
+0@
+1I
+1?
+b1001 $
+b1001 )
+b111 #
+b111 (
+b1001 Q
+b111 P
+b111 S
+#60000
+b100 !
+b100 *
+1C
+0E
+0D
+1F
+17
+1@
+0I
+06
+1H
+b111 $
+b111 )
+b1101 #
+b1101 (
+b111 Q
+b1101 P
+b10000 S
+#80000
+1"
+1K
+0L
+1N
+1J
+b0 !
+b0 *
+0C
+1E
+1B
+13
+12
+04
+1D
+0F
+1/
+0.
+07
+0@
+16
+b11111 +
+1%
+b0 $
+b0 )
+b1111 #
+b1111 (
+1R
+b0 Q
+b1111 P
+b10100 S
+#100000
+11
+03
+1:
+0<
+1C
+0E
+b1111 !
+b1111 *
+1L
+0N
+02
+14
+0;
+1=
+0D
+1F
+0M
+1O
+1.
+17
+1@
+1I
+b1111 $
+b1111 )
+b1111 Q
+b10000 S
+#120000
+b11111 S

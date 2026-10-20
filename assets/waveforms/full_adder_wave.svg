@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 394" width="1100" height="394" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>Full adder (two half adders + OR) and NAND-only full adder</title>
+<desc>Waveform rendered from the Icarus Verilog VCD file tb_full_adder_wave.vcd (VCD timescale 1ps). Simulation output, not hardware measurement.</desc>
+<rect width="1100" height="394" fill="#ffffff"/>
+<text x="16" y="26" font-size="17" font-weight="bold" fill="#111">Full adder (two half adders + OR) and NAND-only full adder</text>
+<text x="16" y="46" font-size="12" fill="#444">Stimulus: all 8 combinations of a, b, cin, 10 ns each. Source: tb_full_adder_wave.vcd (Icarus Verilog simulation, time in ns).</text>
+<line x1="170.0" y1="72" x2="170.0" y2="344" stroke="#d9d9d9" stroke-width="1"/>
+<text x="170.0" y="66" font-size="11" text-anchor="middle" fill="#555">0</text>
+<line x1="270.0" y1="72" x2="270.0" y2="344" stroke="#d9d9d9" stroke-width="1"/>
+<text x="270.0" y="66" font-size="11" text-anchor="middle" fill="#555">10</text>
+<line x1="370.0" y1="72" x2="370.0" y2="344" stroke="#d9d9d9" stroke-width="1"/>
+<text x="370.0" y="66" font-size="11" text-anchor="middle" fill="#555">20</text>
+<line x1="470.0" y1="72" x2="470.0" y2="344" stroke="#d9d9d9" stroke-width="1"/>
+<text x="470.0" y="66" font-size="11" text-anchor="middle" fill="#555">30</text>
+<line x1="570.0" y1="72" x2="570.0" y2="344" stroke="#d9d9d9" stroke-width="1"/>
+<text x="570.0" y="66" font-size="11" text-anchor="middle" fill="#555">40</text>
+<line x1="670.0" y1="72" x2="670.0" y2="344" stroke="#d9d9d9" stroke-width="1"/>
+<text x="670.0" y="66" font-size="11" text-anchor="middle" fill="#555">50</text>
+<line x1="770.0" y1="72" x2="770.0" y2="344" stroke="#d9d9d9" stroke-width="1"/>
+<text x="770.0" y="66" font-size="11" text-anchor="middle" fill="#555">60</text>
+<line x1="870.0" y1="72" x2="870.0" y2="344" stroke="#d9d9d9" stroke-width="1"/>
+<text x="870.0" y="66" font-size="11" text-anchor="middle" fill="#555">70</text>
+<line x1="970.0" y1="72" x2="970.0" y2="344" stroke="#d9d9d9" stroke-width="1"/>
+<text x="970.0" y="66" font-size="11" text-anchor="middle" fill="#555">80</text>
+<line x1="1070.0" y1="72" x2="1070.0" y2="344" stroke="#d9d9d9" stroke-width="1"/>
+<text x="1070.0" y="66" font-size="11" text-anchor="middle" fill="#555">90</text>
+<text x="1094" y="66" font-size="11" text-anchor="end" fill="#555">ns</text>
+<text x="160" y="101.0" font-size="13" text-anchor="end" fill="#111">a</text>
+<line x1="170.0" y1="109" x2="570.0" y2="109" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="109" x2="570.0" y2="85" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="85" x2="1070.0" y2="85" stroke="#1f4e79" stroke-width="2"/>
+<line x1="170" y1="116" x2="1070" y2="116" stroke="#eee"/>
+<text x="160" y="139.0" font-size="13" text-anchor="end" fill="#111">b</text>
+<line x1="170.0" y1="147" x2="370.0" y2="147" stroke="#1f4e79" stroke-width="2"/><line x1="370.0" y1="147" x2="370.0" y2="123" stroke="#1f4e79" stroke-width="2"/><line x1="370.0" y1="123" x2="570.0" y2="123" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="123" x2="570.0" y2="147" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="147" x2="770.0" y2="147" stroke="#1f4e79" stroke-width="2"/><line x1="770.0" y1="147" x2="770.0" y2="123" stroke="#1f4e79" stroke-width="2"/><line x1="770.0" y1="123" x2="1070.0" y2="123" stroke="#1f4e79" stroke-width="2"/>
+<line x1="170" y1="154" x2="1070" y2="154" stroke="#eee"/>
+<text x="160" y="177.0" font-size="13" text-anchor="end" fill="#111">cin</text>
+<line x1="170.0" y1="185" x2="270.0" y2="185" stroke="#1f4e79" stroke-width="2"/><line x1="270.0" y1="185" x2="270.0" y2="161" stroke="#1f4e79" stroke-width="2"/><line x1="270.0" y1="161" x2="370.0" y2="161" stroke="#1f4e79" stroke-width="2"/><line x1="370.0" y1="161" x2="370.0" y2="185" stroke="#1f4e79" stroke-width="2"/><line x1="370.0" y1="185" x2="470.0" y2="185" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="185" x2="470.0" y2="161" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="161" x2="570.0" y2="161" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="161" x2="570.0" y2="185" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="185" x2="670.0" y2="185" stroke="#1f4e79" stroke-width="2"/><line x1="670.0" y1="185" x2="670.0" y2="161" stroke="#1f4e79" stroke-width="2"/><line x1="670.0" y1="161" x2="770.0" y2="161" stroke="#1f4e79" stroke-width="2"/><line x1="770.0" y1="161" x2="770.0" y2="185" stroke="#1f4e79" stroke-width="2"/><line x1="770.0" y1="185" x2="870.0" y2="185" stroke="#1f4e79" stroke-width="2"/><line x1="870.0" y1="185" x2="870.0" y2="161" stroke="#1f4e79" stroke-width="2"/><line x1="870.0" y1="161" x2="1070.0" y2="161" stroke="#1f4e79" stroke-width="2"/>
+<line x1="170" y1="192" x2="1070" y2="192" stroke="#eee"/>
+<text x="160" y="215.0" font-size="13" text-anchor="end" fill="#111">sum</text>
+<line x1="170.0" y1="223" x2="270.0" y2="223" stroke="#1f4e79" stroke-width="2"/><line x1="270.0" y1="223" x2="270.0" y2="199" stroke="#1f4e79" stroke-width="2"/><line x1="270.0" y1="199" x2="370.0" y2="199" stroke="#1f4e79" stroke-width="2"/><line x1="370.0" y1="199" x2="470.0" y2="199" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="199" x2="470.0" y2="223" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="223" x2="570.0" y2="223" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="223" x2="570.0" y2="199" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="199" x2="670.0" y2="199" stroke="#1f4e79" stroke-width="2"/><line x1="670.0" y1="199" x2="670.0" y2="223" stroke="#1f4e79" stroke-width="2"/><line x1="670.0" y1="223" x2="770.0" y2="223" stroke="#1f4e79" stroke-width="2"/><line x1="770.0" y1="223" x2="870.0" y2="223" stroke="#1f4e79" stroke-width="2"/><line x1="870.0" y1="223" x2="870.0" y2="199" stroke="#1f4e79" stroke-width="2"/><line x1="870.0" y1="199" x2="1070.0" y2="199" stroke="#1f4e79" stroke-width="2"/>
+<line x1="170" y1="230" x2="1070" y2="230" stroke="#eee"/>
+<text x="160" y="253.0" font-size="13" text-anchor="end" fill="#111">cout</text>
+<line x1="170.0" y1="261" x2="470.0" y2="261" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="261" x2="470.0" y2="237" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="237" x2="570.0" y2="237" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="237" x2="570.0" y2="261" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="261" x2="670.0" y2="261" stroke="#1f4e79" stroke-width="2"/><line x1="670.0" y1="261" x2="670.0" y2="237" stroke="#1f4e79" stroke-width="2"/><line x1="670.0" y1="237" x2="1070.0" y2="237" stroke="#1f4e79" stroke-width="2"/>
+<line x1="170" y1="268" x2="1070" y2="268" stroke="#eee"/>
+<text x="160" y="291.0" font-size="13" text-anchor="end" fill="#111">sum_nand</text>
+<line x1="170.0" y1="299" x2="270.0" y2="299" stroke="#1f4e79" stroke-width="2"/><line x1="270.0" y1="299" x2="270.0" y2="275" stroke="#1f4e79" stroke-width="2"/><line x1="270.0" y1="275" x2="370.0" y2="275" stroke="#1f4e79" stroke-width="2"/><line x1="370.0" y1="275" x2="470.0" y2="275" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="275" x2="470.0" y2="299" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="299" x2="570.0" y2="299" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="299" x2="570.0" y2="275" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="275" x2="670.0" y2="275" stroke="#1f4e79" stroke-width="2"/><line x1="670.0" y1="275" x2="670.0" y2="299" stroke="#1f4e79" stroke-width="2"/><line x1="670.0" y1="299" x2="770.0" y2="299" stroke="#1f4e79" stroke-width="2"/><line x1="770.0" y1="299" x2="870.0" y2="299" stroke="#1f4e79" stroke-width="2"/><line x1="870.0" y1="299" x2="870.0" y2="275" stroke="#1f4e79" stroke-width="2"/><line x1="870.0" y1="275" x2="1070.0" y2="275" stroke="#1f4e79" stroke-width="2"/>
+<line x1="170" y1="306" x2="1070" y2="306" stroke="#eee"/>
+<text x="160" y="329.0" font-size="13" text-anchor="end" fill="#111">cout_nand</text>
+<line x1="170.0" y1="337" x2="470.0" y2="337" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="337" x2="470.0" y2="313" stroke="#1f4e79" stroke-width="2"/><line x1="470.0" y1="313" x2="570.0" y2="313" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="313" x2="570.0" y2="337" stroke="#1f4e79" stroke-width="2"/><line x1="570.0" y1="337" x2="670.0" y2="337" stroke="#1f4e79" stroke-width="2"/><line x1="670.0" y1="337" x2="670.0" y2="313" stroke="#1f4e79" stroke-width="2"/><line x1="670.0" y1="313" x2="1070.0" y2="313" stroke="#1f4e79" stroke-width="2"/>
+<line x1="170" y1="344" x2="1070" y2="344" stroke="#eee"/>
+</svg>

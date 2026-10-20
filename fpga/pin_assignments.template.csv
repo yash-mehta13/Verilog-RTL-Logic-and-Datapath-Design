@@ -1,0 +1,13 @@
+# TEMPLATE - NO REAL PIN NUMBERS. Copy this file and fill every <...> from YOUR board's
+# user manual / schematic (DE10 variant is not specified by the course sheet).
+# signal,direction,top_level_module,board_resource,fpga_pin,io_standard,notes
+sw[0],input,fpga_half_adder_top,<SWITCH_0 name>,<PIN_xx>,<e.g. 3.3-V LVTTL - confirm in manual>,A
+sw[1],input,fpga_half_adder_top,<SWITCH_1 name>,<PIN_xx>,<io standard>,B
+led[0],output,fpga_half_adder_top,<LED_0 name>,<PIN_xx>,<io standard>,SUM
+led[1],output,fpga_half_adder_top,<LED_1 name>,<PIN_xx>,<io standard>,CARRY
+# fpga_alu4_top: sw[8:0] -> 9 switches, led[8:0] -> 9 LEDs; same procedure
+sw[2:0],input,fpga_alu4_top,<3 switches>,<PIN_xx...>,<io standard>,operand A (0-7)
+sw[5:3],input,fpga_alu4_top,<3 switches>,<PIN_xx...>,<io standard>,operand B (0-7)
+sw[8:6],input,fpga_alu4_top,<3 switches>,<PIN_xx...>,<io standard>,opcode
+led[3:0],output,fpga_alu4_top,<4 LEDs>,<PIN_xx...>,<io standard>,result y
+led[8:4],output,fpga_alu4_top,<5 LEDs>,<PIN_xx...>,<io standard>,carry borrow overflow zero negative

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>ALU block diagram</title>
+<desc>Parameterized ALU: arithmetic unit (add/sub), logic unit, 8:1 result MUX selected by op, and flag logic.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect width="1100" height="520" fill="#ffffff"/>
+<text x="20.0" y="30.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a">ALU  (alu #(WIDTH) / alu_st; wrappers alu_1bit, alu_4bit, alu_8bit)</text>
+<text x="60.0" y="90.0" font-size="14" text-anchor="start" font-weight="bold" fill="#1b2a3a">a[W-1:0]</text>
+<text x="60.0" y="200.0" font-size="14" text-anchor="start" font-weight="bold" fill="#1b2a3a">b[W-1:0]</text>
+<rect x="220.0" y="60.0" width="240.0" height="90.0" rx="8" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="340.0" y="93.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Arithmetic unit</text>
+<text x="340.0" y="109.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">a + b      (op 000)</text>
+<text x="340.0" y="125.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">a + ~b + 1 (op 001)</text>
+<rect x="220.0" y="180.0" width="240.0" height="130.0" rx="8" fill="#e7f5ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="340.0" y="233.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Logic unit</text>
+<text x="340.0" y="249.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">a &amp; b,  a | b,  a ^ b,</text>
+<text x="340.0" y="265.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">~(a ^ b),  ~a,  b</text>
+<line x1="140.0" y1="85.0" x2="220.0" y2="85.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="140.0" y1="205.0" x2="220.0" y2="205.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="140.0,205.0 180.0,205.0 180.0,120.0 220.0,120.0" fill="none" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="140.0,85.0 170.0,85.0 170.0,250.0 220.0,250.0" fill="none" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="560.0" y="90.0" width="120.0" height="220.0" rx="8" fill="#fff1e0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="620.0" y="187.6" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">8:1</text>
+<text x="620.0" y="204.6" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">result</text>
+<text x="620.0" y="221.6" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">MUX</text>
+<line x1="460.0" y1="105.0" x2="560.0" y2="120.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="510.0" y="106.5" font-size="11" text-anchor="middle" font-weight="normal" fill="#444">sum</text>
+<line x1="460.0" y1="245.0" x2="560.0" y2="245.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="510.0" y="239.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#444">6 results</text>
+<text x="620.0" y="350.0" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">op[2:0]</text>
+<line x1="620.0" y1="336.0" x2="620.0" y2="310.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="680.0" y1="200.0" x2="780.0" y2="200.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="790.0" y="205.0" font-size="14" text-anchor="start" font-weight="bold" fill="#d55e00">y[W-1:0]</text>
+<rect x="780.0" y="260.0" width="280.0" height="130.0" rx="8" fill="#f3ebf7" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="920.0" y="298.9" font-size="12" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Flag logic</text>
+<text x="920.0" y="313.9" font-size="11" text-anchor="middle" font-weight="normal" fill="#1b2a3a">carry  (ADD only)</text>
+<text x="920.0" y="328.9" font-size="11" text-anchor="middle" font-weight="normal" fill="#1b2a3a">borrow (SUB only)</text>
+<text x="920.0" y="343.9" font-size="11" text-anchor="middle" font-weight="normal" fill="#1b2a3a">overflow (ADD/SUB, signed)</text>
+<text x="920.0" y="358.9" font-size="11" text-anchor="middle" font-weight="normal" fill="#1b2a3a">zero = (y == 0), negative = y[W-1]</text>
+<polyline points="460.0,135.0 500.0,135.0 500.0,400.0 920.0,400.0 920.0,390.0" fill="none" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="505.0" y="395.0" font-size="11" text-anchor="start" font-weight="normal" fill="#444">cout, carry into MSB</text>
+<polyline points="740.0,200.0 740.0,320.0 780.0,320.0" fill="none" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="40" y="360" width="70" height="22" fill="#dbe7f3" stroke="#7a8a99"/>
+<text x="75.0" y="375.4" font-size="12" text-anchor="middle" font-weight="bold" fill="#1b2a3a">op</text>
+<rect x="110" y="360" width="70" height="22" fill="#dbe7f3" stroke="#7a8a99"/>
+<text x="145.0" y="375.4" font-size="12" text-anchor="middle" font-weight="bold" fill="#1b2a3a">operation</text>
+<rect x="40" y="382" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="75.0" y="397.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">000</text>
+<rect x="110" y="382" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="145.0" y="397.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">ADD</text>
+<rect x="40" y="404" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="75.0" y="419.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">001</text>
+<rect x="110" y="404" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="145.0" y="419.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">SUB</text>
+<rect x="40" y="426" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="75.0" y="441.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">010</text>
+<rect x="110" y="426" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="145.0" y="441.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">AND</text>
+<rect x="40" y="448" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="75.0" y="463.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">011</text>
+<rect x="110" y="448" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="145.0" y="463.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">OR</text>
+<rect x="200" y="360" width="70" height="22" fill="#dbe7f3" stroke="#7a8a99"/>
+<text x="235.0" y="375.4" font-size="12" text-anchor="middle" font-weight="bold" fill="#1b2a3a">op</text>
+<rect x="270" y="360" width="70" height="22" fill="#dbe7f3" stroke="#7a8a99"/>
+<text x="305.0" y="375.4" font-size="12" text-anchor="middle" font-weight="bold" fill="#1b2a3a">operation</text>
+<rect x="200" y="382" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="235.0" y="397.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">100</text>
+<rect x="270" y="382" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="305.0" y="397.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">XOR</text>
+<rect x="200" y="404" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="235.0" y="419.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">101</text>
+<rect x="270" y="404" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="305.0" y="419.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">XNOR</text>
+<rect x="200" y="426" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="235.0" y="441.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">110</text>
+<rect x="270" y="426" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="305.0" y="441.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">NOT A</text>
+<rect x="200" y="448" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="235.0" y="463.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">111</text>
+<rect x="270" y="448" width="70" height="22" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="305.0" y="463.4" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">PASS B</text>
+<text x="20.0" y="505.0" font-size="12" text-anchor="start" font-weight="normal" fill="#555">carry/borrow/overflow are forced to 0 for logic opcodes; flags are recomputed every evaluation (nothing is held over).</text>
+</svg>
