@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 430" width="1100" height="430" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>Simple encoder vs priority encoder</title>
+<desc>encoder8to3 asserts valid only for one-hot inputs; priority_encoder8to3 outputs the highest asserted index.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect width="1100" height="430" fill="#ffffff"/>
+<text x="20.0" y="30.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a">8:3 encoder vs 8:3 priority encoder</text>
+<rect x="40.0" y="60.0" width="480.0" height="80.0" rx="8" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="280.0" y="88.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">encoder8to3 (simple)</text>
+<text x="280.0" y="104.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">assumes exactly one input is 1</text>
+<text x="280.0" y="120.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">valid = 1 only for one-hot d; otherwise y is meaningless</text>
+<rect x="580.0" y="60.0" width="480.0" height="80.0" rx="8" fill="#fff1e0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="820.0" y="88.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">priority_encoder8to3</text>
+<text x="820.0" y="104.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">highest set bit wins</text>
+<text x="820.0" y="120.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">valid = |d ; d = 0 gives y = 0, valid = 0</text>
+<rect x="90" y="170" width="120" height="30" fill="#dbe7f3" stroke="#7a8a99"/>
+<text x="150.0" y="191.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">d[7:0]</text>
+<rect x="210" y="170" width="120" height="30" fill="#fde3c9" stroke="#7a8a99"/>
+<text x="270.0" y="191.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">y</text>
+<rect x="330" y="170" width="120" height="30" fill="#fde3c9" stroke="#7a8a99"/>
+<text x="390.0" y="191.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">valid</text>
+<rect x="90" y="200" width="120" height="30" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="150.0" y="221.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">00000001</text>
+<rect x="210" y="200" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="270.0" y="221.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">000</text>
+<rect x="330" y="200" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="390.0" y="221.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">1</text>
+<rect x="90" y="230" width="120" height="30" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="150.0" y="251.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">00001000</text>
+<rect x="210" y="230" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="270.0" y="251.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">011</text>
+<rect x="330" y="230" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="390.0" y="251.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">1</text>
+<rect x="90" y="260" width="120" height="30" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="150.0" y="281.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">00000110</text>
+<rect x="210" y="260" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="270.0" y="281.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">(011)</text>
+<rect x="330" y="260" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="390.0" y="281.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">0</text>
+<rect x="90" y="290" width="120" height="30" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="150.0" y="311.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">00000000</text>
+<rect x="210" y="290" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="270.0" y="311.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">(000)</text>
+<rect x="330" y="290" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="390.0" y="311.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">0</text>
+<rect x="630" y="170" width="120" height="30" fill="#dbe7f3" stroke="#7a8a99"/>
+<text x="690.0" y="191.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">d[7:0]</text>
+<rect x="750" y="170" width="120" height="30" fill="#fde3c9" stroke="#7a8a99"/>
+<text x="810.0" y="191.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">y</text>
+<rect x="870" y="170" width="120" height="30" fill="#fde3c9" stroke="#7a8a99"/>
+<text x="930.0" y="191.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">valid</text>
+<rect x="630" y="200" width="120" height="30" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="690.0" y="221.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">00000001</text>
+<rect x="750" y="200" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="810.0" y="221.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">000</text>
+<rect x="870" y="200" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="930.0" y="221.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">1</text>
+<rect x="630" y="230" width="120" height="30" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="690.0" y="251.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">00001000</text>
+<rect x="750" y="230" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="810.0" y="251.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">011</text>
+<rect x="870" y="230" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="930.0" y="251.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">1</text>
+<rect x="630" y="260" width="120" height="30" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="690.0" y="281.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">00000110</text>
+<rect x="750" y="260" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="810.0" y="281.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">010</text>
+<rect x="870" y="260" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="930.0" y="281.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">1</text>
+<rect x="630" y="290" width="120" height="30" fill="#ffffff" stroke="#b5c0cb"/>
+<text x="690.0" y="311.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">00000000</text>
+<rect x="750" y="290" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="810.0" y="311.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">000</text>
+<rect x="870" y="290" width="120" height="30" fill="#fff6ec" stroke="#b5c0cb"/>
+<text x="930.0" y="311.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">0</text>
+<text x="90.0" y="350.0" font-size="12" text-anchor="start" font-weight="normal" fill="#555">(..) = raw OR-gate output, not a valid code: the simple encoder does not prioritize.</text>
+<text x="630.0" y="350.0" font-size="12" text-anchor="start" font-weight="normal" fill="#555">d = 00000110: inputs 1 and 2 both active -&gt; index 2 reported.</text>
+<text x="40.0" y="400.0" font-size="13" text-anchor="start" font-weight="normal" fill="#1b2a3a" font-family="Menlo, Consolas, monospace">Equations (priority): y2 = d7+d6+d5+d4;  y1 = d7+d6+d5'd4'(d3+d2);  y0 = d7+d6'd5+d6'd4'd3+d6'd4'd2'd1</text>
+</svg>

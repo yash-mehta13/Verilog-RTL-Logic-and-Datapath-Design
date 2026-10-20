@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" width="1100" height="760" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>2:1 multiplexer internal realizations</title>
+<desc>SOP, POS, NAND-only and NOR-only 2:1 MUX drawn from rtl/mux/mux2.v, plus a conceptual transmission-gate MUX.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect width="1100" height="760" fill="#ffffff"/>
+<text x="20.0" y="30.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a">2:1 MUX  y = s ? d1 : d0  - gate-level realizations (from rtl/mux/mux2.v)</text>
+<text x="20.0" y="64.0" font-size="14" text-anchor="start" font-weight="bold" fill="#1b2a3a">mux2_sop (4 gates)</text>
+<text x="42.0" y="104.0" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">s</text>
+<circle cx="50.0" cy="100.0" r="3" fill="#1b2a3a"/>
+<text x="42.0" y="161.6" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">d0</text>
+<circle cx="50.0" cy="157.6" r="3" fill="#1b2a3a"/>
+<text x="42.0" y="219.2" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">d1</text>
+<circle cx="50.0" cy="215.2" r="3" fill="#1b2a3a"/>
+<path d="M120,84.0 L154,100.0 L120,116.0 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="158" cy="100.0" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M120,144.0 H145 A20,20 0 0 1 145,184.0 H120 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<path d="M238,108.80000000000001 H263 A20,20 0 0 1 263,148.8 H238 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<path d="M356,126.4 Q370,146.4 356,166.4 Q390,166.4 404,146.4 Q390,126.4 356,126.4 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<path d="M50.0,100.0 C85.0,100.0 85.0,100.0 120.0,100.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,100.0 C85.0,100.0 85.0,155.0 120.0,155.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,215.2 C85.0,215.2 85.0,173.0 120.0,173.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M162.0,100.0 C200.0,100.0 200.0,119.8 238.0,119.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,157.6 C144.0,157.6 144.0,137.8 238.0,137.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M283.0,128.8 C322.0,128.8 322.0,137.4 361.0,137.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M165.0,164.0 C263.0,164.0 263.0,155.4 361.0,155.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<text x="142.0" y="76.0" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">ns</text>
+<text x="142.0" y="140.0" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">t1</text>
+<text x="260.0" y="104.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">t0</text>
+<text x="378.0" y="122.4" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">y</text>
+<line x1="404.0" y1="146.4" x2="430.0" y2="146.4" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="434.0" y="150.4" font-size="13" text-anchor="start" font-weight="bold" fill="#d55e00">y</text>
+<text x="560.0" y="64.0" font-size="14" text-anchor="start" font-weight="bold" fill="#1b2a3a">mux2_pos (4 gates)</text>
+<text x="582.0" y="104.0" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">s</text>
+<circle cx="590.0" cy="100.0" r="3" fill="#1b2a3a"/>
+<text x="582.0" y="161.6" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">d0</text>
+<circle cx="590.0" cy="157.6" r="3" fill="#1b2a3a"/>
+<text x="582.0" y="219.2" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">d1</text>
+<circle cx="590.0" cy="215.2" r="3" fill="#1b2a3a"/>
+<path d="M660,84.0 L694,100.0 L660,116.0 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="698" cy="100.0" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M660,144.0 Q674,164.0 660,184.0 Q694,184.0 708,164.0 Q694,144.0 660,144.0 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<path d="M778,137.6 Q792,157.6 778,177.6 Q812,177.6 826,157.6 Q812,137.6 778,137.6 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<path d="M896,140.8 H921 A20,20 0 0 1 921,180.8 H896 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<path d="M590.0,100.0 C625.0,100.0 625.0,100.0 660.0,100.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M590.0,100.0 C627.5,100.0 627.5,155.0 665.0,155.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M590.0,157.6 C627.5,157.6 627.5,173.0 665.0,173.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M702.0,100.0 C742.5,100.0 742.5,148.6 783.0,148.6" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M590.0,215.2 C686.5,215.2 686.5,166.6 783.0,166.6" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M708.0,164.0 C802.0,164.0 802.0,151.8 896.0,151.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M826.0,157.6 C861.0,157.6 861.0,169.8 896.0,169.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<text x="682.0" y="76.0" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">ns</text>
+<text x="682.0" y="140.0" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">t0</text>
+<text x="800.0" y="133.6" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">t1</text>
+<text x="918.0" y="136.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">y</text>
+<line x1="941.0" y1="160.8" x2="967.0" y2="160.8" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="971.0" y="164.8" font-size="13" text-anchor="start" font-weight="bold" fill="#d55e00">y</text>
+<text x="20.0" y="304.0" font-size="14" text-anchor="start" font-weight="bold" fill="#1b2a3a">mux2_nand (4 gates)</text>
+<text x="42.0" y="344.0" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">s</text>
+<circle cx="50.0" cy="340.0" r="3" fill="#1b2a3a"/>
+<text x="42.0" y="401.6" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">d0</text>
+<circle cx="50.0" cy="397.6" r="3" fill="#1b2a3a"/>
+<text x="42.0" y="459.2" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">d1</text>
+<circle cx="50.0" cy="455.2" r="3" fill="#1b2a3a"/>
+<path d="M120,320.0 H145 A20,20 0 0 1 145,360.0 H120 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="169" cy="340.0" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M120,384.0 H145 A20,20 0 0 1 145,424.0 H120 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="169" cy="404.0" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M238,348.8 H263 A20,20 0 0 1 263,388.8 H238 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="287" cy="368.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M356,366.4 H381 A20,20 0 0 1 381,406.4 H356 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="405" cy="386.4" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M50.0,340.0 C81.0,340.0 81.0,340.0 112.0,340.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<line x1="112.0" y1="331.0" x2="112.0" y2="349.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<line x1="112.0" y1="331.0" x2="120.0" y2="331.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<line x1="112.0" y1="349.0" x2="120.0" y2="349.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M50.0,340.0 C85.0,340.0 85.0,395.0 120.0,395.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,455.2 C85.0,455.2 85.0,413.0 120.0,413.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M173.0,340.0 C205.5,340.0 205.5,359.8 238.0,359.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M50.0,397.6 C144.0,397.6 144.0,377.8 238.0,377.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M291.0,368.8 C323.5,368.8 323.5,377.4 356.0,377.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M173.0,404.0 C264.5,404.0 264.5,395.4 356.0,395.4" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<text x="142.0" y="316.0" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">ns</text>
+<text x="142.0" y="380.0" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">t1</text>
+<text x="260.0" y="344.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">t0</text>
+<text x="378.0" y="362.4" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">y</text>
+<line x1="409.0" y1="386.4" x2="435.0" y2="386.4" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="439.0" y="390.4" font-size="13" text-anchor="start" font-weight="bold" fill="#d55e00">y</text>
+<text x="560.0" y="304.0" font-size="14" text-anchor="start" font-weight="bold" fill="#1b2a3a">mux2_nor (4 gates)</text>
+<text x="582.0" y="344.0" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">s</text>
+<circle cx="590.0" cy="340.0" r="3" fill="#1b2a3a"/>
+<text x="582.0" y="401.6" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">d0</text>
+<circle cx="590.0" cy="397.6" r="3" fill="#1b2a3a"/>
+<text x="582.0" y="459.2" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">d1</text>
+<circle cx="590.0" cy="455.2" r="3" fill="#1b2a3a"/>
+<path d="M660,320.0 Q674,340.0 660,360.0 Q694,360.0 708,340.0 Q694,320.0 660,320.0 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="712" cy="340.0" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M660,384.0 Q674,404.0 660,424.0 Q694,424.0 708,404.0 Q694,384.0 660,384.0 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="712" cy="404.0" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M778,377.6 Q792,397.6 778,417.6 Q812,417.6 826,397.6 Q812,377.6 778,377.6 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="830" cy="397.6" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M896,380.8 Q910,400.8 896,420.8 Q930,420.8 944,400.8 Q930,380.8 896,380.8 Z" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.8"/>
+<circle cx="948" cy="400.8" r="4" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M590.0,340.0 C623.5,340.0 623.5,340.0 657.0,340.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<line x1="657.0" y1="331.0" x2="657.0" y2="349.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<line x1="657.0" y1="331.0" x2="665.0" y2="331.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<line x1="657.0" y1="349.0" x2="665.0" y2="349.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<path d="M590.0,397.6 C627.5,397.6 627.5,395.0 665.0,395.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M590.0,340.0 C627.5,340.0 627.5,413.0 665.0,413.0" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M716.0,340.0 C749.5,340.0 749.5,388.6 783.0,388.6" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M590.0,455.2 C686.5,455.2 686.5,406.6 783.0,406.6" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M716.0,404.0 C808.5,404.0 808.5,391.8 901.0,391.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<path d="M834.0,397.6 C867.5,397.6 867.5,409.8 901.0,409.8" fill="none" stroke="#1b2a3a" stroke-width="1.4"/>
+<text x="682.0" y="316.0" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">ns</text>
+<text x="682.0" y="380.0" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">t0</text>
+<text x="800.0" y="373.6" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">t1</text>
+<text x="918.0" y="376.8" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">y</text>
+<line x1="952.0" y1="400.8" x2="978.0" y2="400.8" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="982.0" y="404.8" font-size="13" text-anchor="start" font-weight="bold" fill="#d55e00">y</text>
+<text x="20.0" y="560.0" font-size="14" text-anchor="start" font-weight="bold" fill="#1b2a3a">Transmission-gate 2:1 MUX (conceptual, transistor level - not modelled in RTL)</text>
+<text x="60.0" y="615.0" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">d0</text>
+<line x1="66.0" y1="610.0" x2="180.0" y2="610.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<polygon points="180,592 230,610 180,628" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<polygon points="250,592 200,610 250,628" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<circle cx="215" cy="588" r="4" fill="#fff" stroke="#1b2a3a"/>
+<line x1="215.0" y1="584.0" x2="215.0" y2="576.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="222.0" y="580.0" font-size="11" text-anchor="start" font-weight="normal" fill="#1b2a3a">s  (PMOS gate)</text>
+<line x1="215.0" y1="624.0" x2="215.0" y2="640.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="222.0" y="642.0" font-size="11" text-anchor="start" font-weight="normal" fill="#1b2a3a">s'  (NMOS gate)</text>
+<line x1="250.0" y1="610.0" x2="330.0" y2="610.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="60.0" y="695.0" font-size="13" text-anchor="end" font-weight="bold" fill="#1b2a3a">d1</text>
+<line x1="66.0" y1="690.0" x2="180.0" y2="690.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<polygon points="180,672 230,690 180,708" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<polygon points="250,672 200,690 250,708" fill="#fff" stroke="#1b2a3a" stroke-width="1.6"/>
+<circle cx="215" cy="668" r="4" fill="#fff" stroke="#1b2a3a"/>
+<line x1="215.0" y1="664.0" x2="215.0" y2="656.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="222.0" y="660.0" font-size="11" text-anchor="start" font-weight="normal" fill="#1b2a3a">s'  (PMOS gate)</text>
+<line x1="215.0" y1="704.0" x2="215.0" y2="720.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="222.0" y="722.0" font-size="11" text-anchor="start" font-weight="normal" fill="#1b2a3a">s  (NMOS gate)</text>
+<line x1="250.0" y1="690.0" x2="330.0" y2="690.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<line x1="330.0" y1="610.0" x2="330.0" y2="690.0" stroke="#1b2a3a" stroke-width="1.6"/>
+<line x1="330.0" y1="650.0" x2="380.0" y2="650.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="386.0" y="655.0" font-size="13" text-anchor="start" font-weight="bold" fill="#d55e00">y</text>
+<text x="470.0" y="620.0" font-size="12" text-anchor="start" font-weight="normal" fill="#1b2a3a">s = 0: the d0 gate conducts (NMOS gate = s' = 1), d1 gate is off.</text>
+<text x="470.0" y="642.0" font-size="12" text-anchor="start" font-weight="normal" fill="#1b2a3a">s = 1: the d1 gate conducts, d0 gate is off.</text>
+<text x="470.0" y="664.0" font-size="12" text-anchor="start" font-weight="normal" fill="#1b2a3a">Static CMOS alternative: AOI22 + inverter (y = ((s'·d0) + (s·d1))'').</text>
+<text x="470.0" y="686.0" font-size="12" text-anchor="start" font-weight="normal" fill="#555">Illustrative only: no transistor sizing, delay or power data.</text>
+</svg>

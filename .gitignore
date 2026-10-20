@@ -1,0 +1,34 @@
+# simulator / build products (regenerate with scripts/run_tests.py)
+sim/generated/
+*.vvp
+*.vcd
+!assets/waveforms/*.vcd
+work/
+transcript
+modelsim.ini
+*.wlf
+
+# Quartus
+quartus/
+db/
+incremental_db/
+output_files/
+*.qws
+*.sof
+*.pof
+*.rpt
+*.summary
+
+# course PDFs and personal data - keep local, never commit without authorization
+reference/
+Digital_Systems_Design_Lab_QP*.pdf
+*.pdf
+
+# python / editors / OS
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

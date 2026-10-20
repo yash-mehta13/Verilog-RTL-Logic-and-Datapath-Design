@@ -1,0 +1,6 @@
+# No Python packages are required: every script uses only the standard library (Python 3.8+).
+# External command-line tools (install via your OS package manager):
+#   iverilog, vvp   required for simulation (Icarus Verilog 11+; tested with 12.0)
+#   gtkwave         optional waveform viewer
+#   yosys           optional latch/synthesizability lint (scripts/synth_check.py)
+# Proprietary tools (Quartus Prime Lite 20.1, ModelSim) are never needed for tests or CI.

@@ -1,0 +1,32 @@
+name: rtl-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install open-source tools
+        run: sudo apt-get update && sudo apt-get install -y iverilog yosys
+      - name: Toolchain check
+        run: python scripts/run_tests.py --check-tools
+      - name: RTL lint
+        run: python scripts/run_tests.py --lint
+      - name: Testbenches
+        run: python scripts/run_tests.py
+      - name: Yosys latch / synthesizability lint
+        run: python scripts/synth_check.py
+      - name: Generated files are up to date
+        run: |
+          for c in config/*.json; do python tools/boolean_design/boolean_design.py --config "$c" --check; done
+          python tools/verification/gen_truth_tables.py --check
+          python tools/verification/gate_count.py --check
+          python scripts/render_diagrams.py --check
+      - name: Documentation and asset checks
+        run: python scripts/verify_docs.py

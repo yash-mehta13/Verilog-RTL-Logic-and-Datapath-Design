@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>Repository overview and RTL verification workflow</title>
+<desc>Four lab tasks feed one shared RTL library; every module is checked by self-checking testbenches run by scripts/run_tests.py.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect width="1100" height="520" fill="#ffffff"/>
+<text x="30.0" y="34.0" font-size="20" text-anchor="start" font-weight="bold" fill="#1b2a3a">Digital Systems Design Lab - repository overview</text>
+<rect x="30.0" y="60.0" width="230.0" height="74.0" rx="8" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="145.0" y="84.5" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Task I</text>
+<text x="145.0" y="101.5" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">adders, subtractors,</text>
+<text x="145.0" y="118.5" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">multipliers, NAND/NOR</text>
+<line x1="145.0" y1="134.0" x2="145.0" y2="170.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="290.0" y="60.0" width="230.0" height="74.0" rx="8" fill="#e7f5ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="405.0" y="84.5" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Task II</text>
+<text x="405.0" y="101.5" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Boolean F / F',</text>
+<text x="405.0" y="118.5" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">SOP/POS, K-map, gates</text>
+<line x1="405.0" y1="134.0" x2="405.0" y2="170.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="550.0" y="60.0" width="230.0" height="74.0" rx="8" fill="#fff1e0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="665.0" y="84.5" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Task III</text>
+<text x="665.0" y="101.5" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">MUX, DEMUX,</text>
+<text x="665.0" y="118.5" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">decoders, encoders</text>
+<line x1="665.0" y1="134.0" x2="665.0" y2="170.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="810.0" y="60.0" width="230.0" height="74.0" rx="8" fill="#f3ebf7" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="925.0" y="84.5" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Task IV</text>
+<text x="925.0" y="101.5" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">ALU 1/4/8-bit, CLA,</text>
+<text x="925.0" y="118.5" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Booth, comparator, FPGA</text>
+<line x1="925.0" y1="134.0" x2="925.0" y2="170.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="30.0" y="170.0" width="1010.0" height="64.0" rx="8" fill="#f2f2f2" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="535.0" y="198.1" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">rtl/  - synthesizable Verilog-2001 library (one authoritative copy)</text>
+<text x="535.0" y="215.1" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">arithmetic | multipliers | mux | decoder | encoder | demux | datapath | alu | fpga</text>
+<rect x="30.0" y="270.0" width="230.0" height="70.0" rx="8" fill="#e7f5ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="145.0" y="301.1" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">config/*.json</text>
+<text x="145.0" y="318.1" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">truth-table spec</text>
+<rect x="290.0" y="270.0" width="230.0" height="70.0" rx="8" fill="#e7f5ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="405.0" y="301.1" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">tools/boolean_design</text>
+<text x="405.0" y="318.1" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">QM, K-map, nets, RTL+TB</text>
+<line x1="260.0" y1="305.0" x2="290.0" y2="305.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="550.0" y="270.0" width="230.0" height="70.0" rx="8" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="665.0" y="301.1" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">tb/task01..04</text>
+<text x="665.0" y="318.1" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">self-checking testbenches</text>
+<rect x="810.0" y="270.0" width="230.0" height="70.0" rx="8" fill="#e7f5ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="925.0" y="301.1" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">examples/registration-function</text>
+<text x="925.0" y="318.1" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">generated RTL + testbenches</text>
+<line x1="520.0" y1="320.0" x2="810.0" y2="320.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="665.0" y="314.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#444">generates</text>
+<line x1="665.0" y1="234.0" x2="665.0" y2="270.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="290.0" y="390.0" width="230.0" height="70.0" rx="8" fill="#fffbe0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="405.0" y="421.1" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">scripts/run_tests.py</text>
+<text x="405.0" y="438.1" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">iverilog -g2001 + vvp</text>
+<line x1="665.0" y1="340.0" x2="470.0" y2="390.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="925.0" y1="340.0" x2="520.0" y2="410.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="550.0" y="390.0" width="230.0" height="70.0" rx="8" fill="#ffffff" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="665.0" y="421.1" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">RESULT: PASS / FAIL</text>
+<text x="665.0" y="438.1" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">logs + summary.json</text>
+<line x1="520.0" y1="425.0" x2="550.0" y2="425.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="810.0" y="390.0" width="230.0" height="70.0" rx="8" fill="#ffffff" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="925.0" y="421.1" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">VCD -&gt; waveform SVG</text>
+<text x="925.0" y="438.1" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">assets/waveforms</text>
+<line x1="780.0" y1="425.0" x2="810.0" y2="425.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="795.0" y="419.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#444">*_wave tests</text>
+<rect x="30.0" y="390.0" width="230.0" height="70.0" rx="8" fill="#f3ebf7" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="145.0" y="421.1" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">docs/ + assets/diagrams</text>
+<text x="145.0" y="438.1" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a">reports, figures</text>
+<line x1="290.0" y1="425.0" x2="260.0" y2="425.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="30.0" y="500.0" font-size="12" text-anchor="start" font-weight="normal" fill="#555">CI (.github/workflows/rtl-ci.yml) runs the same commands. Quartus/DE10 steps are documented only; they need no CI.</text>
+</svg>

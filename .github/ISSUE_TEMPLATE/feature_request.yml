@@ -1,0 +1,14 @@
+name: Feature request
+description: New circuit, testbench, diagram or documentation improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like added?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Which lab requirement or learning goal does it serve?

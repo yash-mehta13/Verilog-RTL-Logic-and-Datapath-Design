@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 330" width="1100" height="330" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>FPGA implementation workflow</title>
+<desc>Quartus Prime Lite 20.1 flow for the DE10 board; documented, not executed in this repository.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect width="1100" height="330" fill="#ffffff"/>
+<text x="20.0" y="30.0" font-size="17" text-anchor="start" font-weight="bold" fill="#1b2a3a">FPGA flow - Intel Quartus Prime Lite 20.1, DE10 board (documented procedure, not executed here)</text>
+<rect x="20.0" y="70.0" width="230.0" height="70.0" rx="8" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="135.0" y="101.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">1. New project</text>
+<text x="135.0" y="117.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">top = fpga_half_adder_top</text>
+<rect x="290.0" y="70.0" width="230.0" height="70.0" rx="8" fill="#eaf2fa" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="405.0" y="101.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">2. Add RTL</text>
+<text x="405.0" y="117.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">fpga_tops.v + deps</text>
+<line x1="250.0" y1="105.0" x2="290.0" y2="105.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="560.0" y="70.0" width="230.0" height="70.0" rx="8" fill="#fff1e0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="675.0" y="101.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">3. Device</text>
+<text x="675.0" y="117.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">from board manual</text>
+<line x1="520.0" y1="105.0" x2="560.0" y2="105.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="830.0" y="70.0" width="230.0" height="70.0" rx="8" fill="#fffbe0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="945.0" y="101.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">4. Analysis &amp;</text>
+<text x="945.0" y="117.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Synthesis</text>
+<line x1="790.0" y1="105.0" x2="830.0" y2="105.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="20.0" y="190.0" width="230.0" height="70.0" rx="8" fill="#fff1e0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="135.0" y="221.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">5. Pin assignment</text>
+<text x="135.0" y="237.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Pin Planner / QSF</text>
+<rect x="290.0" y="190.0" width="230.0" height="70.0" rx="8" fill="#fffbe0" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="405.0" y="221.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">6. Compile</text>
+<text x="405.0" y="237.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Fitter + Assembler</text>
+<line x1="250.0" y1="225.0" x2="290.0" y2="225.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="560.0" y="190.0" width="230.0" height="70.0" rx="8" fill="#e7f5ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="675.0" y="221.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">7. Program</text>
+<text x="675.0" y="237.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">USB-Blaster, .sof</text>
+<line x1="520.0" y1="225.0" x2="560.0" y2="225.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="830.0" y="190.0" width="230.0" height="70.0" rx="8" fill="#e7f5ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="945.0" y="221.2" font-size="13" text-anchor="middle" font-weight="bold" fill="#1b2a3a">8. Verify on board</text>
+<text x="945.0" y="237.2" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a">switches -&gt; LEDs</text>
+<line x1="790.0" y1="225.0" x2="830.0" y2="225.0" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="1040.0,140.0 1040.0,160.0 135.0,160.0 135.0,190.0" fill="none" stroke="#1b2a3a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="20.0" y="300.0" font-size="12" text-anchor="start" font-weight="normal" fill="#555">Orange steps need board-specific data (device part number, pin numbers) taken from the board's own manual; they are left as placeholders on purpose.</text>
+</svg>
